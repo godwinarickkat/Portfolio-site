@@ -1,0 +1,97 @@
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1110px;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  gap: 40px;
+  padding: 0 20px;
+}
+
+
+.left {
+  flex: 1;
+  text-align: left;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.right .photo{
+            width: 390px;
+          height: 390px;
+          border-radius: 50%;
+          object-fit: cover;
+          opacity: 70%;
+}
+.left .name {
+  font-size: 50px;
+  color: white;
+  font-weight: bold;
+  font-family: cursive;
+}
+
+.left .intro {
+  color: #9c9c9c;
+  max-width: 500px;
+  margin: 16px 0;
+  line-height: 1.5;
+  font-family: cursive;
+  font-size: 15px;
+}
+.button {
+  background-color: #e8f006;
+  padding: 21px 64px;
+  border: none;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 0px 0px 20px rgba(154, 206, 111, 0.6);
+  border-radius: 6px;
+  cursor: pointer;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.typing-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid black;
+  animation: typing 10s steps(25, end) infinite, blink 0.7s step-end infinite;
+  box-sizing: border-box;
+}
+
+
+/* Typing effect */
+@keyframes typing {
+  0% {
+    width: 0ch;
+  }
+  40% {
+    width: 25ch; /* Adjust based on text length */
+  }
+  60% {
+    width: 25ch;
+  }
+  100% {
+    width: 0ch;
+  }
+}
+
+/* Cursor blinking */
+@keyframes blink {
+  0%, 100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
