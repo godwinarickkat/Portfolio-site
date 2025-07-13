@@ -35,7 +35,7 @@
   font-size: 50px;
   color: white;
   font-weight: bold;
-  font-family: cursive;
+  font-family: sans-serif;
 }
 
 .left .intro {
@@ -43,7 +43,7 @@
   max-width: 500px;
   margin: 16px 0;
   line-height: 1.5;
-  font-family: cursive;
+  font-family: fantasy;
   font-size: 15px;
 }
 .button {
